@@ -3,7 +3,7 @@ export class Header {
         const header = document.createElement('header');
         header.innerHTML = `
             <nav class="navbar">
-                <div class="logo">✨ Mi Portafolio</div>
+                <div class="logo">Mi Portafolio</div>
                 <div class="menu-hamburger" id="hamburger">☰</div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio">Inicio</a></li>

@@ -3,7 +3,7 @@ export class Habilidades {
         const section = document.createElement('section');
         section.id = "habilidades";
         section.innerHTML = `
-            <h2>⚙️ Mis habilidades</h2>
+            <h2>Mis habilidades</h2>
             <div class="grid skill-grid">
                 ${this.skillCard('Java', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg')}
                 ${this.skillCard('Spring Boot', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg')}
@@ -20,14 +20,6 @@ export class Habilidades {
                 ${this.skillCard('MySQL', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg')}
                 ${this.skillCard('Oraccle DB', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg')}
                 
-            </div>
-            <div class="card" style="margin-top:2rem;">
-                <h3>🎓 Formación destacada</h3>
-                <p><strong>Capacitación de Generation México</strong> - Desarrollador Java Full Stack (2024)</p>
-                <p>Certificaciones: Oracle Certified Associate, Scrum Fundamentals, AWS Cloud Practitioner (en curso).</p>
-                <p><strong>Experiencia profesional:</strong> 1 año como freelance desarrollando APIs, 6 meses de prácticas en TechSolutions S.L.</p>
-                <p><strong>Habilidades blandas:</strong> Trabajo en equipo, resolución de problemas, comunicación asertiva, adaptabilidad.</p>
-            </div>
         `;
         return section;
     }
