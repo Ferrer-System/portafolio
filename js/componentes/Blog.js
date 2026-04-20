@@ -4,7 +4,6 @@ export class Blog {
         section.id = "blog";
         section.innerHTML = `
             <h2>Blog / Artículos</h2>
-            <p style="text-align:center;"><strong>Actualizar al menos 1 vez por semana</strong> (yo, Carlos, lo haré semanalmente)</p>
             <div class="grid">
                 ${this.articulo(
                     "Cómo optimizar consultas JPA en Spring Boot",
@@ -22,7 +21,6 @@ export class Blog {
                     "Ventajas, desventajas y cuál elegir según el tamaño del equipo..."
                 )}
             </div>
-            <p style="text-align:center; margin-top:1rem;"><strong>Nota:</strong> Estos son artículos de ejemplo. <em>Yo los actualizaré semanalmente con nuevo contenido</em>.</p>
         `;
         return section;
     }

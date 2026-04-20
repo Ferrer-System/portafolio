@@ -48,3 +48,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ========================================
+// BOTÓN FLOTANTE "VOLVER ARRIBA"
+// ========================================
+
+// Crear el botón flotante
+const scrollTopBtn = document.createElement('button');
+scrollTopBtn.id = 'scrollTopBtn';
+scrollTopBtn.innerHTML = '↑↑';
+scrollTopBtn.setAttribute('aria-label', 'Volver arriba');
+document.body.appendChild(scrollTopBtn);
+
+// Función para mostrar/ocultar el botón según el scroll
+function toggleScrollTopButton() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (window.scrollY > 300) {
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
+}
+
+// Función para volver arriba suavemente
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Escuchar evento de scroll
+window.addEventListener('scroll', toggleScrollTopButton);
+
+// Escuchar click en el botón
+scrollTopBtn.addEventListener('click', scrollToTop);
+
+// Verificar estado inicial
+toggleScrollTopButton();

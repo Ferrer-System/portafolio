@@ -14,7 +14,7 @@ export class Contacto {
                 </form>
                 <div style="text-align:center; margin-top:1rem;">
                     <!-- ACTUALIZAR: Email y teléfono reales -->
-                    <p><strong>ortizdionicio993@gmail.com</strong> |  +52 729-3285-777</p>
+                    <p><strong>ortizdionicio993@gmail.com</strong></p>
                     <p><a href="#">GitHub</a>  |  <a href="#">LinkedIn</a></p>
                 </div>
             </div>

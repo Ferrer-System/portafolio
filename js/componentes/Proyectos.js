@@ -28,13 +28,18 @@ export class Proyectos {
 
     card(title, desc, tech) {
         return `
-            <div class="card">
-                <h3>${title}</h3>
-                <p>${desc}</p>
-                <p><strong>Tecnologías:</strong> ${tech}</p>
-                <!-- ACTUALIZAR: Reemplazar # por enlaces reales de GitHub y Demo -->
-                <a href="#" class="btn" target="_blank">Código GitHub</a>
-                <a href="#" class="btn" style="background:gray;">Demo</a>
+            <div class="card project-card">
+                <div class="card-content">
+                    <h3>${title}</h3>
+                    <div class="card-description">
+                        <p>${desc}</p>
+                        <p class="tech-stack"><strong>Tecnologías:</strong> ${tech}</p>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <a href="#" class="btn" target="_blank">Código GitHub</a>
+                    <a href="#" class="btn btn-secondary" target="_blank">Demo</a>
+                </div>
             </div>
         `;
     }

@@ -4,22 +4,24 @@ export class Hero {
         section.id = "inicio";
         section.className = "hero";
         section.innerHTML = `
-            <div class="hero-img">
-                <!-- ACTUALIZAR: Cambiar src por tu foto personal -->
-                <img src="./img/ferrer.jpeg" alt="Mi foto simpática">
+            <div class="hero-visual">
+                <div class="hero-blur-bg"></div>
+                <div class="hero-img-wrapper">
+                    <div class="hero-silhouette"></div>
+                    <img class="hero-img-full" src="./img/francisco.jpeg" alt="Francisco Ortiz - Backend Developer">
+                    <div class="hero-img-overlay"></div>
+                </div>
             </div>
             <div class="hero-content">
                 <h1>Francisco Ortiz Dionicio</h1>
                 <p class="tagline">"Convierto problemas complejos en soluciones Java elegantes"</p>
                 <div class="contact-info">
-                    <!-- ACTUALIZAR: Email, ubicación y teléfono reales -->
                     <span>📧 ortizdionicio993@gmail.com</span>
                     <span>📍 Toluca, Estado de México</span>
                 </div>
                 <div class="social-links">
-                    <!-- ACTUALIZAR: Reemplazar # por tus enlaces reales -->
-                    <a href="https://github.com/Ferrer-System" target="_blank"> GitHub</a>
-                    <a href="https://www.linkedin.com/in/francisco-ortiz-dionicio/" target="_blank"> LinkedIn</a>
+                    <a href="https://github.com/Ferrer-System" target="_blank">🔗 GitHub</a>
+                    <a href="https://www.linkedin.com/in/francisco-ortiz-dionicio/" target="_blank">💼 LinkedIn</a>
                 </div>
             </div>
         `;
